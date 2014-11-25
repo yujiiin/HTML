@@ -118,6 +118,7 @@
 				21AF3370189E130A00AEC03D /* ViewController.h */,
 				21AF3371189E130A00AEC03D /* ViewController.m */,
 				21AF3373189E130A00AEC03D /* Images.xcassets */,
+				21AF3392189E19C700AEC03D /* Resources */,
 				21AF3362189E130A00AEC03D /* Supporting Files */,
 			);
 			path = HTML;
@@ -150,6 +151,13 @@
 				21AF3383189E130A00AEC03D /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		21AF3392189E19C700AEC03D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -460,6 +468,7 @@
 				21AF338C189E130A00AEC03D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		21AF338D189E130A00AEC03D /* Build configuration list for PBXNativeTarget "HTMLTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +477,7 @@
 				21AF338F189E130A00AEC03D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

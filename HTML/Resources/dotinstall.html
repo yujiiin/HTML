@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>study of Jquery mobile</title>
+	<meta name="viewport" content="width=device-width, initital-scale=1">
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+        <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+</head>
+
+
+<body>
+<div data-role="page" id="home">
+	<div data-role="header" data-position="fixed">
+		<a href="menu" data-icon="gear">Left</a>
+		<h1>Top Page</h1>
+		<a href="menu" data-icon="check">Right</a>
+	</div>
+	<div data-role="content">
+               <a href="http://google.com" data-role="button" rel="external">Google</a>
+                <a href="test.html" data-role="button">Test HTML</a>
+                <a href="index.php" data-ajax="false" data-role="button">index PHP</a>
+
+
+        <form action="mail.php" method="post">
+			<div data-role="fieldcontain">
+				<label for="name">Name</label>
+				<input type="text" name="name" id="name" value="">
+			</div>
+                        <div data-role="fieldcontain">
+                                <label for="keywords">Search</label>
+                                <input type="search" name="keywords" id="keywords" value="">
+                        </div>
+                        <div data-role="fieldcontain">
+                                <label for="amount">Amount</label>
+                                <input type="range" name="amount" min="0" max="100" id="amount" value="20">
+                        </div>
+			<div data-role="fieldcontain">
+				<fieldset data-role="controlgroup">
+					<legend>Color</legend>
+					<input type="checkbox" name="color_1" id="color_1">
+					<label for="color_1">Red</label>
+					<input type="checkbox" name="color_2" id="color_2">
+					<label for="color_2">Blue</label>
+					<input type="checkbox" name="color_3" id="color_3">
+					<label for="color_3">Green</label>
+				</fieldset>
+			</div>
+                        <div data-role="fieldcontain">
+                                <fieldset data-role="controlgroup">
+                                        <legend>Color</legend>
+                                        <input type="radio" name="color" value="1" id="color_1">
+                                        <label for="color_1">Red</label>
+                                        <input type="radio" name="color" value="2" id="color_2">
+                                        <label for="color_2">Blue</label>
+                                        <input type="radio" name="color" value="3" id="color_3">
+                                        <label for="color_3">Green</label>
+                                </fieldset>
+                        </div>
+			<div data-role="fieldcontain">
+				<label for="color">Color</label>
+				<select name="color" id="color" data-native-menu="false" multiple>
+					<option value="1" selected>Red</option>
+					<option value="2">Blue</option>
+					<option value="3">Green</option>
+				</select>
+			</div>
+			<input type="submit" value="Submit!">
+		</form>
+
+		<a href="#menu">Menu</a>
+		<a href="#menu" data-role="button" data-icon="gear" data-inline="true">Menu</a>
+		<a href="#menu" data-role="button" data-theme="b" data-inline="true">Menu</a>
+		<div data-role="controlgroup" data-type="horizontal">
+		<a href="#menu" data-role="button" data-icon="gear">Menu</a>
+		<a href="#menu" data-role="button" data-icon="gear">Menu</a>
+		<a href="#menu" data-role="button" data-icon="gear">Menu</a>
+		</div>
+		<ul data-role="listview" data-filter="true">
+			<li data-role="list-divider">List1</li>
+			<li><a href=#menu#>Menu1<span class="ui-list-count">23</span></a></li>
+			<li><a href=#menu#>Menu2</a></li>
+			<li><a href=#menu#>Menu3</a></li>
+		
+
+			<li data-role="list-divider">List2</li>
+			<li><a href=#menu#>Menu1</a></li>
+			<li><a href=#menu#>Menu2</a></li>
+			<li><a href=#menu#>
+			<img src="redicon.jpeg">
+			<p>Menu3</p>
+			<h3>more explanation</h3></a></li>
+
+		</ul>
+
+
+
+
+	</div>
+	<div data-role="footer" class="ui-bar" data-position="fixed">
+		<a href="#menu" data-icon="plus">Add</a>
+		<a href="#menu" data-icon="delete">Deete</a>
+	</div>
+</div>
+<div data-role="page" id="menu" data-add-back-btn="true">
+        <div data-role="header">
+		<h1>Menu Page</h1>
+        </div>
+        <div data-role="content">
+		<a href="#home">Home</a>
+        </div>
+        <div data-role="footer">
+        	<div data-role="navbar">
+			<ul>
+				<li><a href="#menu" data-icon="gear">Menu1</a></li>
+				<li><a href="#menu" class="ui-btn-active">Menu2</a></li>
+				<li><a href="#menu" data-icon="gear">Menu3</a></li>
+			</ul>
+		</div>
+	</div>
+
+
+</div>
+
+
+</body>
+</html>

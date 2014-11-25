@@ -1,0 +1,87 @@
+<!DOCTYLE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>first html</title>
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+        <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+
+
+	</head>
+	<body>
+		
+        <div id="page1" data-role="page">
+            
+            <div data-role="header" data-position="fixed">
+                <h1>Page 1</h1>
+            </div>
+            
+            <div data-role="content">
+                <div id="box" data-role="button">box</div>
+                <input type="date" id="date">
+            
+                <button id="button" data-inline="true">Get date</button>
+
+                <a href="#panel" data-role="button" data-theme="e" data-icon="arrow-l">open panel</a>
+            
+                <a href="#page2" data-transition="fade">go to page2</a>
+		<a href="dotinstall.html" data-role="button">Dot install html</a>            
+            </div>
+            <div data-role="footer"></div>
+            
+        </div><!-- /page -->
+        <div id="page2" data-role="page">
+            <div data-role="header">
+            <a href="#page1" data-icon="back" data-rel="back">back</a>
+            <h1>Page 2</h1>
+            </div>
+            <div data-role="content">
+                <div id="box2">box2</div>
+                <a href="#page1" data-transition="pop">back to page1</a>
+            </div>
+            <div data-role="footer"></div>
+        </div>
+        <div data-role="panel" id="panel">
+            <ul data-role="listview">
+                <li data-theme="a">item1</li>
+                <li data-theme="b">item2</li>
+                <li data-theme="a">item3</li>
+                <li data-theme="b">item3</li>
+            </ul>
+            <ul data-role="listview" data-inset="true">
+                <li data-theme="a">item1</li>
+                <li data-theme="b">item2</li>
+                <li data-theme="a">item3</li>
+                <li data-theme="b">item3</li>
+            </ul>
+            <a href="#page1" data-rel="close" data-role="button">close panel</a>
+        </div>
+        <script>
+            $(function(){
+              $('#button').click(function(){
+                    var date = $("#date").val();
+                    alert(date);
+                    });
+              $('#box').click(function(){
+                    alert("Don't touch me!");
+                    });
+              
+              });
+        </script>
+        <style>
+            #box{
+                background:yellow;
+                width:100px;
+                height:100px;
+            }
+            #box2{
+                background:green;
+                width:100px;
+                height:100px;
+            }
+
+        }
+		</style>
+	</body>
+</html>

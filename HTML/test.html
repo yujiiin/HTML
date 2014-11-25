@@ -1,0 +1,133 @@
+<!DOCTYLE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<title>first html</title>
+		<link rel="stylesheet" href="mystyle.css">
+		<meta name="description" content="this is first html">
+		<style>
+		</style>
+		<link rel="shortcut icon" href="favicon.ico">
+	</head>
+	<body>
+		<!--
+		実態参照
+		style参照
+		-->
+		<p>This is &lt;p&gt;.</P>
+		<p style="color:green">Green!</p>
+
+	
+		<!--
+			スタイリング 
+			div : 汎用ブロック要素（前後に改行が入る）
+			span : 汎用インライン要素（前後に改行が入らない）
+			id : その文書に一つだけの要素
+			class : 複数あってもよい
+			
+			構造的
+			header
+			footer
+			nav
+			article
+			aside
+			section
+		-->
+		
+		<header>
+			<h1>Blog title</h1>
+		</header>
+		<article>
+			<h2>released!<span class="test">日本語</span></h2>
+			<p>happy!</p>
+		</article>
+		<aside>
+			<h3>about this site</h3>
+		</aside>
+		<footer>
+			coryright 2013 @yujiiin
+		</footer>
+		
+		<p>spanspan</p>
+		
+		<div id="main">
+			<p>main</p>
+			<p>hello<span class="notice">hello</span></p>
+		</div>
+	
+		<form action="survey.php" method="post"> <!-- post or get -->
+			<p>name : <input type="text" name="name" size="60" maxlength="6" required></p>
+			<p>memo : <textarea name="memo"></textarea></p>
+			<p>password : <input type="passward" name="password"></p>
+			<p><input type="hidden" name="user_id" value="32"></p>
+			<p>date : <input type="date" name="birthday"></p>
+			<p>url : <input type="url" name="url"></p>
+			<p>email : <input type="email" name="email"></p>
+			<p><input type="submit" value="send!"></p>
+			<p>
+				Colors : 
+				<label><input type="radio" name="color" value="red">red</label>
+				<input type="radio" name="color" value="blue" id="blue"><label for="blue">blue</label>
+				<input type="radio" name="color" value="green">green
+			</p>
+						<p>
+				Colors : 
+				<input type="checkbox" name="color" value="red">red
+				<input type="checkbox" name="color" value="blue">blue
+				<input type="checkbox" name="color" value="green">green
+			</p>
+			<select name="color" siza=5 multiple>
+				<option value="red">Red</option>
+				<option value="blue">Blue</option>
+				<option value="green">Green</option>
+			</select>
+		</form>
+	
+		<p><a href="http://google.com">Google</a></p>
+		<p><a hreg="http://google,com" target="_brank">Google</a></p>
+		<p><a href="hello.html">Hello</a></p>
+		<p><a href="#hello2">jump</a></p>
+		<img src="cart.jpg" width="500" height="200" alt="cart image" title="cart pic">
+		
+		
+		<table>
+		<!-- 
+		tr : table row
+		th : table header
+		td : table data
+		-->
+			<thead>
+				<tr>
+					<th>name</th><th>2012</th><th>2013</th> 
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>yuji</td><td>20</td><td>25</td>
+				</tr>
+				<tr>
+					<td>yuji</td><td>20</td><td>25</td>
+				</tr>
+				<tr>
+					<td>yuji</td><td>20</td><td>25</td>
+				</tr>
+			</tbody>
+		</table>
+		<p id="hello2">hello again</p>
+		<ul><!-- Unordered list -->
+			<li>apple</li>
+			<li>banana</li>	
+		</ul>
+		<ol><!-- Ordered list -->
+			<li>apple</li>
+			<li>banana</li>	
+		</ol>
+	
+		<h1>topic</h1>
+		<h2>topic</h2>
+		<h3>topic</h3>
+		<hr>
+		<p>hello!<br><strong>hello again!</strong></p>
+		<script src="myscript.js"></script>
+	</body>
+</html>
